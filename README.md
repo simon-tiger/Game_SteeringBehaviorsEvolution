@@ -41,3 +41,7 @@ I made my Evolutionary Steering Behaviors project (link in the README) a game, s
     <td>https://github.com/simon-tiger/steering-behaviors-evolution</td>
   </tr>
 </table>
+
+<hr/>
+
+More information is in the code.
