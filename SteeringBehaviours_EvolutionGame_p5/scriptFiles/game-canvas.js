@@ -13,9 +13,9 @@ var createGameArea = function() {
 
     p.Game.prototype.reset = function() {
       // Reset everything
-      console.log(this.isTimer);
+      console.log(this.isTimer.checked());
       if (this.isTimer.checked()) {
-        this.timer = this.timerElt.value() * 60;
+        this.timer = Number(this.timeLeft.value() * 60);
       } else {
         this.timer = null;
       }
@@ -57,9 +57,9 @@ var createGameArea = function() {
       // Timer on/off
       this.isTimer = p.select('#is-timer');
       this.timerElt = p.select('#timer');
+      this.timeLeft = p.select('#time-left');
       this.resetBtn = p.select('#new-game');
-      this.resetBtn.mousePressed(this.reset);
-      console.log(this.isTimer);
+      this.resetBtn.mousePressed(this.reset.bind(this));
     }
 
     p.Game.prototype.draw = function() {
@@ -143,7 +143,8 @@ var createGameArea = function() {
         p.noFill();
         p.rect(50, 7, 300, 7);
         p.fill(255);
-        p.rect(50, 7, this.timer, 7);
+        var maxTime = Number(this.timeLeft.value() * 60) || 300;
+        p.rect(50, 7, p.constrain(p.map(this.timer, 0, maxTime, 0, 300), 0, 300), 7);
         p.noStroke();
         p.text(p.floor(this.timer / 60) + ':' + p.nf(p.floor(this.timer % 60), 2), 5, 14);
         p.pop();
