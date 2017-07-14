@@ -184,7 +184,11 @@ var createGameArea = function() {
           fitest.highlight();
         }
         this.cloningChance *= 0.997;
-        this.timer -= 1/60;
+
+        // Some timer stuff
+        if (this.timer) {
+          this.timer -= 1/60;
+        }
         if (this.timer < 0) {
           this.timer = 0;
         }
