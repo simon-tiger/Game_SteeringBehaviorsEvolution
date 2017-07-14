@@ -31,8 +31,8 @@ I made my Evolutionary Steering Behaviors project (link in the README) a game, s
 </table>
 
 ### Other details are:
- - I am now highlighting the best one
- - Something moving around with perlin noise adds poison (instead of just adding poison randomly)
+ - I am now highlighting the best vehicle
+ - Another invader is moving around with perlin noise spreading poison (instead of just adding new poison randomly, without using perlin noise)
  
 ### Links:
 <table>
@@ -40,8 +40,16 @@ I made my Evolutionary Steering Behaviors project (link in the README) a game, s
     <td>Original code</td>
     <td>https://github.com/simon-tiger/steering-behaviors-evolution</td>
   </tr>
+  <tr>
+    <td>p5.js version</td>
+    <td>https://simon-tiger.github.io/Game_SteeringBehaviorsEvolution/SteeringBehaviours_EvolutionGame_p5/</td>
+  </tr>
 </table>
 
 <hr/>
 
 More information is in the code.
+
+## Credits:
+Inspired by Daniel Shiffman's Evolutionary Steering Behaviors Coding Challenge<br/>
+Link to the Challenge: https://www.youtube.com/watch?v=flxOkx0yLrY
