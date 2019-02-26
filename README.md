@@ -98,6 +98,13 @@ So what was The Everlasting Vehicle's DNA and health?
 
 So it attracts to poison, yet its health is approximately 397 times bigger than a very good health! And better yet, it even lasted for a couple of hours so far!!!
 
+### Update
+I've restarted the computer, so it died now.
+
+- Updated average health (right berfore its death): ~435
+
+<hr/>
+
 ## Credits:
 Inspired by Daniel Shiffman's Evolutionary Steering Behaviors Coding Challenge<br/>
 Link to the Challenge: https://www.youtube.com/watch?v=flxOkx0yLrY
